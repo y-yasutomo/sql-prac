@@ -1,0 +1,6 @@
+UPDATE
+    POPULATION
+SET
+    DISTRICT_NAME = CASE WHEN DISTRICT_NAME Is null or DISTRICT_NAME = '' THEN '不明'
+                ELSE DISTRICT_NAME
+           END;
